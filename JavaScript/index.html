@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+
+        .button{
+            min-width:150px;
+            height: 50px;
+            color: #fff;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+            background: #efefef;
+            box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+            color: #585858;
+        }
+        .button-neumorphic:active {
+            box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="test"></h1>
+    <h1 id="changeColor">INDIA , Narendra Modi is Prime Minister of Republic Of India.</h1>
+       
+    <h2>India ia one of the biggest democracy in the world.</h2>
+    
+    <p>India is known for its diverse culture and tradiations
+    there are 22 official languages of India but Hindi and English are the official language of India New Delhi is capital of India and Mumbai is Known as comercial capital of India There are many big cities in india  </p>
+    <!-- <button type="button" onmouseover="document.getElementById('changeColor').style.color = 'red'">ON Mouse Button</button> -->
+    <div onmouseover="mDown(this)" onmouseup="mUp(this)" style="background-color: aqua; width: 100px; height:30px; padding: 30px;">
+        Hey ! Click Me
+    </div>
+    <ul id="change">
+        <li>New Delhi</li>
+        <li>Mumbai</li>
+        <li>Chennai</li>
+        <li>Hydrabad</li>
+        <li>Kolkata</li>
+        <li>Bangore</li>
+        <li>Kochi</li>
+    </ul>
+    
+    <!-- <div id = "test">
+        <form id="myForm" action="#">
+            First Name : <input type="text" name="fname" ><br>
+            Last Name  :  <input type="text" name="lname"><br><br>
+            <button class="button" onclick="myFunction()">GetValue</button>
+        </form>
+    </div> -->
+    <div>
+        <h3 id="getValue"></h3>
+    </div>
+    <!-- <script src="./script.js">
+
+    </script> -->
+
+
+    <script>
+        function mDown(obj){
+            obj.style.backgroundColor = "yellow";
+            obj.innerHTML = "You Clicked";
+        }
+        function mUp(obj){
+            obj.style.backgroundColor = "orange";
+            obj.innerHTML = "GO Away !";
+
+        }
+    </script>
+ 
+</body>
+</html>
